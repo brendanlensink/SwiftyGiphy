@@ -169,7 +169,7 @@ public class SwiftyGiphyViewController: UIViewController {
 
         if self.navigationController?.presentingViewController != nil
         {
-            self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissPicker))
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissPicker))
         }
         else
         {
