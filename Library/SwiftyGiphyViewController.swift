@@ -166,15 +166,7 @@ public class SwiftyGiphyViewController: UIViewController {
         super.viewWillAppear(animated)
         
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
-
-        if self.navigationController?.presentingViewController != nil
-        {
-            self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissPicker))
-        }
-        else
-        {
-            self.navigationItem.rightBarButtonItem = nil
-        }
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissPicker))
     }
 
     public override func viewWillLayoutSubviews() {
