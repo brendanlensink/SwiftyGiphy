@@ -167,7 +167,7 @@ public class SwiftyGiphyViewController: UIViewController {
         
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         
-        if self.navigationController?.viewControllers.count == 1 && self.navigationController?.presentingViewController != nil {
+        if self.navigationController?.viewControllers.count == 1 && self.navigationController?.presentingViewController != nil
         {
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissPicker))
             self.navigationItem.rightBarButtonItem = nil
